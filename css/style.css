@@ -1,0 +1,122 @@
+
+/*              All pages              */
+
+body{
+    background-color: #24353f;
+    color: white;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.w-120px{
+    width: 120px;
+}
+
+h1{
+    color: #17a2b8;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+.formContainer{
+    box-shadow: 0px 0px 27px 13px rgba(0, 0, 0, 0.664);
+}
+
+input.form-control{
+    background-color: transparent;
+    color: inherit !important;
+}
+input.form-control::placeholder{
+    color: white;
+}
+
+input.form-control:focus{
+    background-color: transparent;
+    box-shadow: none;
+    /* border-color: #80bdff !important */;
+}
+
+
+
+.photoProfile{
+    width: 250px;
+    height: 250px;
+    border-radius: 30px;
+    background-image: url(../images/imageProfileDefault/kisspng-computer-icons-user-profile-person-5abd85306ff7f7.0592226715223698404586.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+
+
+/*          Index && Signup          */
+
+p.connection a{
+    transition: 0.2s;
+}
+
+p.connection a:hover{
+    color: skyblue;
+}
+
+
+
+/*              Index              */
+
+.BtnLog:hover{
+    color: rgb(255, 255, 255) !important;
+    background-color: #17a2b8;
+}
+
+
+/*              Profile              */
+
+
+
+
+/*              Signup              */
+
+.passwordSignup i{
+    top: 50%;
+    transform: translateY(-50%);
+    right: 50px;
+}
+
+
+
+.modal-header span.rounded-circle{
+    display: block;
+    width: 25px;
+    height: 25px;
+}
+
+
+.modal-header span:nth-child(1)
+{
+    background-color: #f15f5d;
+}
+.modal-header span:nth-child(2)
+{
+    background-color: #febe2e;
+}
+.modal-header span:nth-child(3)
+{
+    background-color: #4db748;
+}
+
+
+@media screen and (max-width: 991px) {
+    body{
+        font-size: 12px;
+    }
+    .formContainer div p{
+        width: 75% !important;
+    }
+}

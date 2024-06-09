@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Signup</title>
+
+    <link rel="icon" href="images/websiteIcon/end-user.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+    
+
+    <div class="container my-5">
+        <div class="w-75 mx-auto p-5 formContainer">
+            <h1 class="text-center mb-4">Smart Login System</h1>
+
+            <div class="text-center d-flex justify-content-center align-items-center flex-column row-gap-1 mb-2">
+                <input type="file" multiple class="form-control border border-white border-1 my-3 d-none" id="imgInput">
+                
+                <label for="imgInput">
+                    <div class="photoProfile overflow-hidden cursor-pointer">
+                
+                    </div>
+                </label>
+
+                <button class="btn btn-success BtnChangePhoto">Change Now</button>
+            </div>
+
+            <div class="nameSignup mb-3">
+                <input type="text" class="form-control border border-white border-1 mb-1" placeholder="Enter your name..." id="nameSignInput">
+                <p class="alert alert-danger rounded-5 py-1 px-3 w-50 fw-medium mb-0 d-none">Name must contain at least 3 characters!!</p>
+            </div>
+
+            <div class="phoneSignup mb-3">
+                <input type="text" class="form-control border border-white border-1 mb-1" placeholder="Enter your phone number..." id="phoneSignInput">
+                <p class="alert alert-danger rounded-5 py-1 px-3 w-50 fw-medium mb-0 d-none">Invalid Phone Number!!</p>
+            </div>
+
+            <div class="ageSignup mb-3">
+                <input type="number" class="form-control border border-white border-1 mb-1" placeholder="Enter your age..." id="ageSignInput">
+                <p class="alert alert-danger rounded-5 py-1 px-3 w-50 fw-medium mb-0 d-none">Age Must be between 15 and 65!!</p>
+            </div>
+
+            
+            <div class="emailSignup mb-3">
+                <input type="email" class="form-control border border-white border-1 mb-1"
+                    placeholder="Enter email..." id="emailSignInput">
+                <p class="alert alert-danger rounded-5 py-1 px-3 w-50 fw-medium mb-0 d-none">Invalid Email!!</p>
+            </div>
+
+            <div class="passwordSignup mb-3">
+                <div class="mb-3">
+                    <div class="position-relative">
+                        <input type="password" class="form-control border border-white border-1 mb-1" placeholder="Enter password..."
+                            id="passwordSignInput">
+                        <i class="fa-solid fa-eye position-absolute cursor-pointer d-none" id="passwordVisible"></i>
+                        <i class="fa-regular fa-eye-slash position-absolute cursor-pointer" id="passwordNonVisible"></i>
+                    </div>
+                        <p class="alert alert-danger rounded-5 py-1 px-3 w-50 fw-medium mb-0 d-none">Password must Start with capital, 8+ characters.!!</p>
+                </div>
+
+                <div>
+                    <div class="position-relative">
+                        <input type="password" class="form-control border border-white border-1 mb-1" placeholder="Confirm password..."
+                            id="confirmSignInput">
+                        <i class="fa-solid fa-eye position-absolute cursor-pointer d-none" id="confPasswordVisible"></i>
+                        <i class="fa-regular fa-eye-slash position-absolute cursor-pointer" id="confPasswordNonVisible"></i>
+                    </div>
+                    <p class="alert alert-danger rounded-5 py-1 px-3 w-50 fw-medium mb-0 d-none">Don't match!!</p>
+                    
+                </div>
+            </div>
+
+            <div>
+                <input type="radio" name="gender" value="male" id="male">
+                <label for="male">Male</label>
+                <br>
+                <input type="radio" name="gender" value="female" id="female">
+                <label for="female">Female</label>
+            </div>
+
+
+            <button class="btn btn-outline-info w-100 my-3 BtnSignup fw-medium">Signup</button>
+
+            <p class="alert alert-success w-25 text-center mx-auto rounded-4 fw-medium d-none">Success!!</p>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content bg-success">
+                        <div class="modal-header">
+                            <span class="rounded-circle"></span>
+                            <span class="rounded-circle mx-2"></span>
+                            <span class="rounded-circle"></span>
+
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="text-center fs-4 fw-medium">All inputs are required!!</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <p class="connection text-center fs-6 mt-2 text-white">
+                <span>Already have an account?</span>
+                <a href="index.html">Login</a>
+            </p>
+        </div>
+    </div>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
